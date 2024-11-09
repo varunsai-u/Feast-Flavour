@@ -1,0 +1,291 @@
+ /* *{
+    border: 2px solid black;
+}    */
+body {
+    margin: 0;
+    padding: 0;
+    position:relative;
+    background-color: #f8f8f8;
+    font-family: Arial, sans-serif;
+   
+  }
+
+
+.navbar {
+    display: flex;
+    position: sticky;
+    top: 0px;
+    justify-content: space-between;
+    background-color:  rgba(34, 34, 34, 0.7);
+    z-index: 1000; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    margin: auto;
+    padding: 0px;
+
+}
+
+#logo{
+    display: flex;
+    
+    align-items: center;
+    color: white;
+}
+
+#logo img{
+    width: 70px;
+    height: auto;
+    border: #333;
+   margin-right: 40px;
+   margin-left: 20px;
+}
+#logo h2{
+    font-size: 25px;
+}
+#menu{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width:400px;
+}
+#logo a{
+    text-decoration: none !important;
+    color: white !important;
+}
+#menu a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+#menu a:hover{
+    color: rgb(253,94,40);
+    
+    transition: 0.5s;
+}
+.herodiv img{
+    width:100%;
+    height:500px;
+   
+}
+.hero-section {
+    position: relative;
+    height: 80vh;
+    background-image: url('images/herobg.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Adjust opacity as needed */
+}
+
+.hero-text {
+    position: relative;
+    z-index: 1;
+    font-family: 'YourPreferredFont', sans-serif;
+}
+
+.hero-text h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.hero-text p {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero-text .cta-button {
+    padding: 0.75rem 2rem;
+    background-color: rgba(255, 165, 0, 0.8); /* Slightly transparent orange */
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.hero-text .cta-button:hover {
+    background-color: rgba(253, 94, 40, 1); /* Darken on hover */
+    text-decoration: none;
+}
+/* Search Section Styling */
+.search-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 2rem;
+    background-color: #d9e6f1;
+}
+
+.search-input {
+    width: 300px; /* Adjust width as needed */
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+    transition: box-shadow 0.3s ease;
+}
+
+.search-input:focus {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-color: #888;
+}
+
+.search-button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    background-color: #ff6347; /* Tomato color, can be customized */
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+    background-color: #e5533e; /* Slightly darker shade on hover */
+}
+/* Recently Added Items Section */
+
+/* Add Recipe Section */
+.add-recipe-section {
+    text-align: center;
+    padding: 3rem 0;
+    background-color: #fefae0; /* Soft background color to make it stand out */
+}
+
+.add-recipe-section h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.add-recipe-section p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+.add-recipe-button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #f7941d; /* Bright orange to match your "Explore Recipes" button */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.add-recipe-button:hover {
+    color: white;
+    background-color: rgba(253, 94,40,1);
+    text-decoration: none; /* Darker shade for hover effect */
+}
+.dropdown {
+    position: relative;
+    /* background-color: rgba(34, 34, 34, 0.7); Positioning context for dropdown */
+}
+
+.dropdown-menu {
+    background-color: rgba(34, 34, 34, 0.7); /* Match navbar background color */
+    border: none; /* Remove default border */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+
+.dropdown-item {
+    color: white; /* Change text color for dropdown items */
+    padding: 10px 20px; /* Add padding for dropdown items */
+}
+
+.dropdown-item:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Add hover effect */
+    color: #f8f9fa; /* Change text color on hover */
+    
+}
+.nav-link.dropdown-toggle:focus {
+    outline: none; /* Remove the blue outline on focus */
+}
+/* Styles for the recipe grid */
+.recipes {
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    gap: 30px; /* Spacing between items */
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.rarp{
+    display: flex;
+    gap:20px;
+    justify-content: center;
+}
+
+.recipe-item {
+    width: 200px; /* Fixed width for each recipe card */
+    text-align: center;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.recipe-item:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.recipe-item img {
+    width: 100%; /* Image fills the card width */
+    height: 150px; /* Fixed height for uniform size */
+    object-fit: cover; /* Crops and centers the image */
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.recipe-item h3 {
+    font-size: 1rem;
+    color: #333;
+    margin: 10px 0;
+    padding: 0 10px;
+    text-decoration:none ;
+}
+.recipe-item a{
+    text-decoration: none;
+}
+/* Footer Styling */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 25px;
+    font-size: 0.9rem;
+    margin-top: 40px;
+}
+
+.footer p {
+    margin: 0;
+    color: #ccc;
+}
+
+
+
+
+
+

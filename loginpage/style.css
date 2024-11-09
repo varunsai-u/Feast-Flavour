@@ -1,0 +1,138 @@
+/* *{
+    outline: 1px solid red;
+} */
+  *{
+   margin:0;
+   padding:0;
+   box-sizing: border-box;
+   font-family: "roboto",sans-serif;
+ } 
+body{
+    background-color: #c9d6ff;
+    background: linear-gradient(to right,#e2e2e2,#e3f2fd);
+}
+
+.container{
+    background: white;
+    width: 450px;
+    padding:1.5em;
+    margin: 100px auto;
+    border-radius: 10px;
+    box-shadow: 0 20px 35px rgba(0,0,0,0.9);
+}
+ form{
+    margin:0 2rem;
+} 
+.form-title{
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-align:center;
+       margin-bottom: 0.4em;
+       padding: 1.3rem;
+}
+input{
+    color: inherit;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #757575;
+    padding-left: 1.5rem;
+    font-size: 15px;
+     position: relative;
+     
+     
+
+}
+ .input-group i{
+    position: absolute;
+    color: rgb(253,94,40);
+} 
+input:focus{
+    background-color: transparent;
+    outline: transparent;
+    border-bottom: 2px solid hsl(327, 90%, 28%);
+}
+input::placeholder{
+    color: transparent;
+}
+label{
+    color: #757575;
+    position:relative;
+    left: 1.3em;
+    top:-1.5em;
+    cursor: auto;
+    transition: 0.3s ease all;
+}
+input:focus~label,input:not(:placeholder-shown)~label{
+    top: -3em;
+    color: hsl(327, 90%, 28%);
+}
+.recover{
+    text-align: right;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+.recover a{
+    text-decoration: none;
+    color: rgb(253,94,40);
+}
+.recover a:hover{
+    text-decoration: underline;
+    color: blue;
+}
+.btn{
+    font-size: 1.1rem;
+    padding: 8px 0;
+     border-radius: 5px;
+     outline: none;
+     border: none;
+     width: 100%;
+     background-color: rgb(253,94,40);
+     color: white;
+     cursor: pointer;
+     transition: 0.9s;
+
+}
+.btn:hover{
+    background: #07001f;
+    color: white;
+}
+.or{
+   text-align: center;
+   margin-top: 1rem;
+}
+.icons{
+    text-align: center;
+}
+.icons i{
+    color: rgb(253,94,40);
+    padding: 0.2rem 1.5rem;
+    font-size: 1.5rem;
+    border: 2px solid #dfe9f5;
+    margin: 0px 15px 15px 15px;
+    border-radius: 5px;
+    transition: 1s;
+}
+.links{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    padding:0 4rem;
+    font-weight: bold;
+}
+.icons i:hover{
+    background-color: #07001f;
+    color: rgb(253,94,40);
+}
+button{
+    color: rgb(253,94,40);
+    border: none;
+    padding: 0.2rem;
+    background-color: transparent;
+    font-weight: bold;
+}
+button:hover{
+    text-decoration: underline;
+    color: blue;
+}
